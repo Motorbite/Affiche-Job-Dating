@@ -2,6 +2,14 @@
  display: inline-block;
  float: right;
 }
+.pole{
+  display: inline-block;
+  float: left;
+}
 h1{
   text-align: center;
+  padding-top: 60px;
+}
+.text{
+  text-align: right;
 }
