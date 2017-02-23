@@ -157,4 +157,80 @@ footer p {
 
 /*Ajoutez les médias queries en dessous*/
 
-@media all and
+@media all and (max-width: 1064px) {
+  body {
+    width: 100%;
+  }
+}
+
+@media all and (min-width: 360px) and (max-width: 1064px) {
+
+    .header-img img {
+      margin-top: 10px;
+    }
+
+   #img1 {
+     margin-left: 30px;
+     height: 8vh;
+   }
+
+   #img2 {
+     height: 8vh;
+  }
+
+
+   .infos2 {
+     border: 1px solid white;
+
+   }
+
+   .adress {
+     width: 100%;
+     margin-left: 150px;
+     margin-top: 60px;
+   }
+
+   footer p {
+     position: relative;
+     bottom: 26px;
+   }
+
+   .infosb {
+     width:
+   }
+
+   .infosa, .infosb {
+     position: relative;
+     left: 150px;
+   }
+
+   .infos2 p {
+     margin-top: 70px;
+     position: relative;
+     right: 27px;
+   }
+
+    footer {
+      padding-bottom: 90px;
+    }
+
+   footer p, footer img {
+     margin-top: 80px;
+   }
+
+   footer img {
+     margin-left: 20px;
+     width: 40vw;
+   }
+
+   footer {
+     display: flex;
+     justify-content: space-between;
+     margin-right: -10px;
+   }
+
+
+   @media all and (min-width: 650px) and (max-width: 1063px) {
+     
+
+  }
