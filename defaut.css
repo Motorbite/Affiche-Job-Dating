@@ -76,7 +76,6 @@ body {
   text-align: right;
   margin-right: 2vw;
   color: white;
-  font-family: cursive;
 }
 
 
@@ -105,8 +104,7 @@ body {
 }
 
 .infos2 {
-  height: 53vh;
-  max-height: 35vh;
+  height: 35vh;
   width: 21vw;
   margin-right: 73px;
   border-top: 4px solid #6cbe45;
@@ -145,17 +143,36 @@ body {
   font-size: 15px;
 }
 
+footer {
+  display: flex;
+  justify-content: center;
+}
+
 footer img {
   height: 5vw;
 }
 
 footer p {
   font-size: 10px;
-  float: right;
-  margin-right: 8vw;
+  margin-left: 3%;
 }
 
 /*Ajoutez les médias queries en dessous*/
+@media (min-width: 1064px) {
+  .infos2 {
+    height: 335px;
+  }
+
+  .infos2 img {
+    display: none;
+  }
+
+  .infos2 a {
+    position: relative;
+    right: 38px;
+  }
+}
+
 
 @media all and (max-width: 1064px) {
   body {
@@ -164,6 +181,10 @@ footer p {
 }
 
 @media all and (min-width: 360px) and (max-width: 1064px) {
+
+     body {
+       margin: 0;
+     }
 
     .header-img img {
       margin-top: 10px;
@@ -180,19 +201,22 @@ footer p {
 
 
    .infos2 {
-     border: 1px solid white;
+     border: none;
+     position: relative;
+     top: 18px;
 
    }
 
    .adress {
-     width: 100%;
-     margin-left: 150px;
+     width: 90%;
+     margin-left: 170px;
      margin-top: 60px;
    }
 
    footer p {
      position: relative;
      bottom: 26px;
+     font-size: 7px;
    }
 
    .infosb {
@@ -229,8 +253,119 @@ footer p {
      margin-right: -10px;
    }
 
-
    @media all and (min-width: 650px) and (max-width: 1063px) {
-     
+
+     .infos {
+        position: relative;
+        right: 25%;
+     }
+
+     .infosa, .infosb {
+       position: relative;
+       left: 60%;
+       top: 10%;
+     }
+
+     .infos2 {
+       height: 30vh;
+       max-height: 56vh;
+       width: 21vw;
+       margin-right: 73px;
+       border-top: 4px solid #6cbe45;
+       border-left: 4px solid #6cbe45;
+       margin-top: 20px;
+       margin-left: 20px;
+       position: relative;
+       left: 170px;
+       top: 35px;
+     }
+
+      .infos2 p {
+        position: relative;
+        left: 3px;
+      }
+
+      footer {
+        width: ;
+        margin-left: 7vw;
+      }
+
+      footer p {
+        position: relative;
+        bottom: 2%;
+        margin-right: 11%;
+      }
+
+      footer img {
+        width: 80px;
+        max-width: 80px;
+      }
+
+      #img1 {
+        width: 30%;
+        height: 50mm;
+      }
+
+      #img2 {
+        width: 25%;
+        height: 40mm;
+      }
+
+      .infos2 img {
+        display: none;
+      }
+  }
+
+@media all and (max-width: 650px) {
+
+  footer p {
+    margin-right: 6%;
+    margin-bottom: 10vw;
+    position: relative;
+    top: -30px;
 
   }
+
+  footer img {
+    width: 8vw;
+    position: relative;
+    right: 20px;
+    bottom: 15px;
+  }
+}
+
+@media all and (max-width: 500px) {
+  #img1 {
+    width: 40mm;
+    height: 35mm;
+    position: relative;
+    right: 15px;
+  }
+
+  #img2 {
+    width: 40mm;
+    height: 30mm;
+    position: relative;
+    left: 2mm;
+  }
+
+  footer {
+    padding-bottom: 20px;
+  }
+
+  .infos2 a {
+    position: relative;
+    bottom: -13px;
+  }
+
+  .infos2 img {
+    position: relative;
+    left: 70px;
+    bottom: 31px;
+  }
+
+  #sub {
+    position: relative;
+    left: 10px;
+  }
+}
